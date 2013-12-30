@@ -10,7 +10,7 @@
       <div id="logoContent" class="gc-logo-content" style="height: 300px;"></div>
     </div>
     <div class="col-md-8">
-      <h1>Welcome</h1>
+      <h1>Thanks for Visiting</h1>
       <div class="gc-content-divider"></div>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
 
@@ -19,7 +19,7 @@
   </div>
 </div>
 
-<div class="container">
+<div id="webApps" class="container">
   <div class="gc-content">
     <div class="col-md-4 gc-icon-title">
       <span class="glyphicon glyphicon-globe"></span>
@@ -28,25 +28,25 @@
     <div class="col-md-8">
 
       <div class="gc-image-container">
-        <p>California Sports Lawyer</p>
-        <img class="img-responsive" src="http://placehold.it/700x75" />
+        <p><a href="http://csllegal.com">California Sports Lawyer</a></p>
+        <a href="http://csllegal.com"><img class="img-responsive gc-border" src="gc/img/csl.png" /></a>
       </div>
 
       <div class="gc-image-container">
-        <p>California Sod Center</p>
-        <img class="img-responsive" src="http://placehold.it/700x75" />
+        <p><a href="http://californiasodcenter.com">California Sod Center</a></p>
+        <a href="http://californiasodcenter.com"><img class="img-responsive gc-border" src="gc/img/csc.png" /></a>
       </div>
 
       <div class="gc-image-container">
-        <p>Redalytics</p>
-        <img class="img-responsive" src="http://placehold.it/700x75" />
+        <p><a href="/web-apps/redalytics">Redalytics</a></p>
+        <a href="/web-apps/redalytics"><img class="img-responsive gc-border" src="gc/img/redalytics.png" /></a>
       </div>
 
     </div>
   </div>
 </div>
 
-<div class="container">
+<div id="canvasAnimations" class="container">
   <div class="gc-content">
     <div class="col-md-4 gc-icon-title">
       <span class="glyphicon glyphicon-picture"></span>
@@ -54,25 +54,25 @@
     </div>
     <div class="col-md-8">
       <div class="gc-image-container">
-        <p>Everywhere, USA</p>
-        <img class="img-responsive" src="http://placehold.it/700x75" />
+        <p><a href="/animations/everywhere-usa">Everywhere, USA</a></p>
+        <a href="/animations/everywhere-usa"><img class="img-responsive gc-border" src="gc/img/everywhere.png" /></a>
       </div>
 
       <div class="gc-image-container">
-        <p>Forest Moon</p>
-        <img class="img-responsive" src="http://placehold.it/700x75" />
+        <p><a href="/animations/forest-moon">Forest Moon</a></p>
+        <a href="/animations/forest-moon"><img class="img-responsive gc-border" src="gc/img/forest_moon.png" /></a>
       </div>
 
       <div class="gc-image-container">
-        <p>Squares and Triangles</p>
-        <img class="img-responsive" src="http://placehold.it/700x75" />
+        <p><a href="/animations/squares-and-triangles">Squares and Triangles</p></a>
+        <a href="/animations/squares-and-triangles"><img class="img-responsive gc-border" src="gc/img/s_and_t.png" /></a>
       </div>
 
     </div>
   </div>
 </div>
 
-<div class="container">
+<div id="contactMe" class="container">
   <div class="gc-content">
     <div class="col-md-4 gc-icon-title">
       <span class="glyphicon glyphicon-envelope"></span>
@@ -96,6 +96,6 @@
 
 @section('scripts')
   <script>
-    new logo('logoContent');
+    logo('logoContent');
   </script>
 @stop

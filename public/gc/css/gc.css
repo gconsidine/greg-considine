@@ -1,20 +1,20 @@
 @font-face {
   font-family: 'geo';
-  src: url('/fonts/geo.ttf');
+  src: url('../fonts/geo.ttf');
 }
 
 @font-face {
   font-family: 'geo-italic';
-  src: url('/fonts/geo_italic.ttf');
+  src: url('../fonts/geo_italic.ttf');
 }
 
 /* Bootstrap Overrides */
 a {
- color: #6b4776;
+  color: #6a9859;
 }
 
 a:hover {
-  color: #6a9859;
+  color: #6b4776;
 }
 
 .navbar {
@@ -27,11 +27,11 @@ a:hover {
 }
 
 .navbar-default .navbar-nav > li > a {
-  color: #6b4776;
+  color: #6a9859;
 }
 
 .navbar-default .navbar-nav > li > a:hover {
-  color: #6a9859;
+  color: #6b4776;
 }
 
 .navbar-default .navbar-toggle {
@@ -42,10 +42,12 @@ a:hover {
   background-color: #6b4776;
 }
 
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+.navbar-default .navbar-toggle:hover, 
+.navbar-default .navbar-toggle:focus {
   background-color: transparent;
 }
-.navbar-default .navbar-toggle:hover .icon-bar, .navbar-default .navbar-toggle:focus .icon-bar {
+.navbar-default .navbar-toggle:hover .icon-bar, 
+.navbar-default .navbar-toggle:focus .icon-bar {
   background-color: #6a9859;
 }
 
@@ -58,19 +60,28 @@ a:hover {
 }
 
 .btn-default {
+  color: #6a9859;
   font-family: 'geo';
-  color: #6b4776;
   font-size: 130%;
   padding: 4px;
 }
 
 .btn-default:hover {
   background-color: white;
-  color: #6a9859;
+  color: #6b4776;
 }
+
 /* greg-considine.com specific */
 em {
   font-family: 'geo-italic';
+}
+
+.gc-border {
+  border: 1px solid #6a9859;
+}
+
+.gc-border:hover {
+  border: 1px solid #6b4776;
 }
 
 .gc-logo-header {
