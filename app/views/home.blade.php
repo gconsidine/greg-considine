@@ -40,8 +40,8 @@
       </div>
 
       <div class="gc-image-container">
-        <p><a href="/web-apps/redalytics">Redalytics</a></p>
-        <a href="/web-apps/redalytics"><img class="img-responsive gc-border" src="gc/img/redalytics.png" /></a>
+        <p><a href="http://redalytics.greg-considine.com">Redalytics</a></p>
+        <a href="http://redalytics.greg-considine.com"><img class="img-responsive gc-border" src="gc/img/redalytics.png" /></a>
       </div>
 
     </div>
