@@ -12,9 +12,11 @@
     <div class="col-md-8">
       <h1>Thanks for Visiting</h1>
       <div class="gc-content-divider"></div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
 
-    <p>Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. </p>
+      <p>Here you'll find a mixed bag of projects I've worked on in my free time.  My primary focus in the last couple of years has been web development while I finish an undergraduate degree in Interdisciplinary Computing and the Arts and Computer Science at the University of California, San Diego. Originally, I started doing web development out of curiosity (having only worked with C, C++, and Java in an academic setting) -- beginning first with static HTML/CSS-only sites, then moving to data-driven PHP + MySQL web applications (full of spaghetti code).  Having to maintain the aforementioned "spaghetti" turned me on to best practices, MVC, and the Laravel Framework.  Somewhere along the way I picked up JavaScript and transitioned away from writing procedural JavaScript to writing object-oriented JavaScript, making use of the Revealing Module pattern.</p>
+
+      <p>Web development is my primary hobby, and I'm always looking to learn new technologies and hone my skills. If you'd like to get in touch with me, use the <a class="gc-scroll" href="#contactMe">contact form</a> below and I'll get back to you as soon as possible.  Thank you!</p>
+
     </div>
   </div>
 </div>
@@ -79,15 +81,18 @@
       <h1>Contact Me</h1>
     </div>
     <div class="col-md-8">
-      <form role="form">
-        <div class="form-group">
-          <textarea name="userMessage" id="userMessage" class="form-control" rows="10" placeholder="Comments and questions." required></textarea>
-        </div>
-        <div class="form-group pull-left">
-          <input type="email" name="userEmail" id="userEmail" class="form-control" placeholder="name@domain.com" required>
-        </div>
-        <button type="submit" class="btn btn-default pull-right">Send</button>
-      </form>
+      <div class="form-group">
+        <textarea name="userMessage" id="userMessage" class="form-control" rows="10" placeholder="Comments and questions." required></textarea>
+      </div>
+      <div class="form-group pull-left">
+        <input type="email" name="userEmail" id="userEmail" class="form-control" placeholder="name@domain.com" required>
+      </div>
+      {{ Form::token() }}
+      <button onclick="gc.request({ 
+                         text : document.getElementById('userMessage').value,
+                         email : document.getElementById('userEmail').value,
+                         token : document.getElementsByName('_token')[0].value
+                       });" class="btn btn-default pull-right">Send</button>
     </div>
   </div>
 </div>
@@ -95,7 +100,5 @@
 @stop
 
 @section('scripts')
-  <script>
-    logo('logoContent');
-  </script>
+  <script> logo('logoContent'); </script>
 @stop

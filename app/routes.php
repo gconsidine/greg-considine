@@ -7,7 +7,9 @@ Route::get('/web-apps/redalytics', function() {
   return View::make('web_apps/redalytics/index');
 });
 
-Route::post('/contact', 'ContactController@sendMessage');
+Route::group(['before' => 'csrf'], function () {
+  Route::post('/contact', 'ContactController@sendMessage');
+});
 
 Route::get('/', function() {
 	return View::make('home');
