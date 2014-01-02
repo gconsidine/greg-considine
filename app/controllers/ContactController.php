@@ -10,8 +10,8 @@ class ContactController extends BaseController {
     ];
 
 		Mail::send('contact', $data, function($message) {
-      $message->from('me@greg-considine.com', 'Greg');
-      $message->to('me@greg-considine.com', 'Greg Considine')->subject('Contact Form Submission');
+      $message->from('greg@greg-considine.com', 'Greg');
+      $message->to('greg@greg-considine.com', 'Greg Considine')->subject('Contact Form Submission');
     });
 
 	}
