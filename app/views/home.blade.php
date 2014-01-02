@@ -76,23 +76,33 @@
 
 <div id="contactMe" class="container">
   <div class="gc-content">
+
     <div class="col-md-4 gc-icon-title">
       <span class="glyphicon glyphicon-envelope"></span>
       <h1>Contact Me</h1>
     </div>
+
     <div class="col-md-8">
+
       <div class="form-group">
         <textarea name="userMessage" id="userMessage" class="form-control" rows="10" placeholder="Comments and questions." required></textarea>
       </div>
+
       <div class="form-group pull-left">
         <input type="email" name="userEmail" id="userEmail" class="form-control" placeholder="name@domain.com" required>
       </div>
+
       {{ Form::token() }}
+
       <button onclick="gc.request({ 
                          text : document.getElementById('userMessage').value,
                          email : document.getElementById('userEmail').value,
                          token : document.getElementsByName('_token')[0].value
-                       });" class="btn btn-default pull-right">Send</button>
+                       });" id="contactButton" class="btn btn-default pull-right">Send</button>
+
+      <div id="contactSuccess" class="pull-right gc-text-success" style="display:none">Thank You!</div>
+      <img id="contactSending" class="pull-right" style="display:none" src="/gc/img/loading.gif" />
+      <div id="contactStatus" class="pull-left gc-contact-status text-danger" style="display:none"></div>
     </div>
   </div>
 </div>

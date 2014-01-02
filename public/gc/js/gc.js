@@ -2,12 +2,16 @@ var gc = (function () {
   
   function request(o) {
     
+    updateStatus('pending');
+
     if(validateRequest(o)) {
       var postString = 'text=' + encodeURIComponent(o.text) + '&email=' 
                      + encodeURIComponent(o.email) + '&_token=' + o.token;
+    } else {
+      updateStatus('fail');
+      return false;
     }
 
-    console.log(o);
     if(window.XMLHttpRequest) {
       httpRequest = new XMLHttpRequest();
     } else if(window.ActiveXObject) {
@@ -33,24 +37,46 @@ var gc = (function () {
     function alertContents(){
       if(httpRequest.readyState === 4){
         if(httpRequest.status === 200){
-          response(httpRequest.responseText);        
+          updateStatus('success');      
         } else {
-          response(false);
+          updateStatus('fail');
         }
       }  
     }
   }
 
-  function response(text) {
-    if(text) {
-      console.log(text);
-    } else {
-
+  function validateRequest(o) {
+    if(o.text !== '' && o.email !== '') {
+      if(o.email.indexOf('@') !== -1 && o.email.indexOf('.') !== -1) {
+        return true;
+      }
     }
+
+    return false;
   }
 
-  function validateRequest(o) {
-    return true;
+  function updateStatus(message) {
+    var contactButton = document.getElementById('contactButton'),
+        contactStatus = document.getElementById('contactStatus'),
+        contactSending = document.getElementById('contactSending'),
+        contactSuccess = document.getElementById('contactSuccess');
+
+    if(message === 'pending') {
+      contactButton.style.display = 'none';
+      contactSending.style.display = 'block';
+      contactButton.style.display = 'none';
+    } else if (message === 'success') {
+      contactStatus.style.display = 'none';
+      contactButton.style.display = 'none';
+      contactSending.style.display = 'none';
+      contactSuccess.style.display = 'block';
+    } else {
+      contactSending.style.display = 'none';
+      contactStatus.innerHTML = 'Invalid submission';
+      contactStatus.style.display = 'block';
+      contactButton.innerHTML = 'Try Again';
+      contactButton.style.display = 'block';
+    }
   }
 
   /* jQuery event handlers */
@@ -60,8 +86,7 @@ var gc = (function () {
   });
 
   return {
-    request : request,
-    response : response
+    request : request
   }
 
 }());
