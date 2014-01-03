@@ -32,18 +32,18 @@
     <div class="col-md-8">
 
       <div class="gc-image-container">
-        <p><a href="http://csllegal.com">California Sports Lawyer</a></p>
-        <a href="http://csllegal.com"><img class="img-responsive gc-border" src="gc/img/csl.png" /></a>
+        <p><a href="http://csllegal.com" target="_blank">California Sports Lawyer</a></p>
+        <a href="http://csllegal.com" target="_blank"><img class="img-responsive gc-border" src="gc/img/csl.png" /></a>
       </div>
 
       <div class="gc-image-container">
-        <p><a href="http://californiasodcenter.com">California Sod Center</a></p>
-        <a href="http://californiasodcenter.com"><img class="img-responsive gc-border" src="gc/img/csc.png" /></a>
+        <p><a href="http://californiasodcenter.com" target="_blank">California Sod Center</a></p>
+        <a href="http://californiasodcenter.com" target="_blank"><img class="img-responsive gc-border" src="gc/img/csc.png" /></a>
       </div>
 
       <div class="gc-image-container">
-        <p><a href="http://redalytics.greg-considine.com">Redalytics</a></p>
-        <a href="http://redalytics.greg-considine.com"><img class="img-responsive gc-border" src="gc/img/redalytics.png" /></a>
+        <p><a href="http://redalytics.greg-considine.com" target="_blank">Redalytics</a></p>
+        <a href="http://redalytics.greg-considine.com" target="_blank"><img class="img-responsive gc-border" src="gc/img/redalytics.png" /></a>
       </div>
 
     </div>
