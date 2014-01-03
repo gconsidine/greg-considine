@@ -53,7 +53,7 @@
 <div id="canvasAnimations" class="container">
   <div class="gc-content">
     <div class="col-md-4 gc-icon-title">
-      <span class="glyphicon glyphicon-globe gc-content-icon"></span>
+      <span class="glyphicon glyphicon-picture gc-content-icon"></span>
       <h1>Canvas Animations</h1>
       <span class="glyphicon glyphicon-info-sign gc-content-details" data-toggle="modal" data-target="#canvasModal"></span>
     </div>
