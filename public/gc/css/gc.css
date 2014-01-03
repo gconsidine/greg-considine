@@ -159,12 +159,9 @@ em {
   margin: 0;
 }
 
-.gc-built-with,
-.gc-connect,
-.gc-info {
-  opacity: 0.5;
+.gc-footer {
+  opacity: 0.7;
 }
-
 .gc-built-with img,
 .gc-connect img,
 .gc-info img {
