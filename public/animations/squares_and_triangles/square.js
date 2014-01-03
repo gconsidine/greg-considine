@@ -129,4 +129,4 @@ var ani = (function () {
 
 })();
 
-setInterval(function () { ani.draw(); }, speed);
+setInterval(ani.draw, 500);

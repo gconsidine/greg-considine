@@ -9,9 +9,9 @@
     
     <title>Greg Considine | @yield('title')</title>
      
-    <link href="gc/css/bootstrap.css" rel="stylesheet" />
-    <link href="gc/css/gc.css" rel="stylesheet" />
-    <link href="gc/img/favicon.png" rel="shortcut icon" />
+    <link href="/gc/css/bootstrap.css" rel="stylesheet" />
+    <link href="/gc/css/gc.css" rel="stylesheet" />
+    <link href="/gc/img/favicon.png" rel="shortcut icon" />
 
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -78,9 +78,9 @@
     </div>
 
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script> 
-    <script src="gc/js/bootstrap.js"></script>
-    <script src="gc/js/logo.js"></script>
-    <script src="gc/js/gc.js"></script>
+    <script src="/gc/js/bootstrap.js"></script>
+    <script src="/gc/js/logo.js"></script>
+    <script src="/gc/js/gc.js"></script>
 
     <script>
       logo('logoHeader');
