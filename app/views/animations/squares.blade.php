@@ -1,5 +1,7 @@
 @extends('animations/template')
 
+@section('title') Squares and Triangles @stop
+
 @section('style')
   <style>
     .canvas-container {
