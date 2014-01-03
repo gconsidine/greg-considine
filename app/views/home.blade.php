@@ -14,7 +14,7 @@
 
       <div class="gc-content-divider"></div>
 
-      <p>Here you'll find a mixed bag of projects I've worked on in my free time.  My primary focus in the last couple of years has been web development while I finish an undergraduate degree in Interdisciplinary Computing and the Arts and Computer Science at the University of California, San Diego. Originally, I started doing web development out of curiosity (having only worked with C, C++, and Java in an academic setting) -- beginning first with static HTML/CSS-only sites, then moving to data-driven PHP + MySQL web applications (full of spaghetti code).  Having to maintain the aforementioned "spaghetti" turned me on to best practices, MVC, and the Laravel Framework.  Somewhere along the way I picked up JavaScript and transitioned away from writing procedural JavaScript to writing object-oriented JavaScript, making use of the Revealing Module pattern.</p>
+      <p>Here you'll find a mixed bag of projects I've worked on in my free time.  My primary focus in the last couple of years has been web development while I finish an undergraduate degree in Interdisciplinary Computing and the Arts and Computer Science at the University of California, San Diego. Originally, I started doing web development out of curiosity (having only worked with C, C++, and Java in an academic setting), beginning first with static HTML/CSS-only sites, then moving to data-driven PHP + MySQL web applications (full of spaghetti code).  Having to maintain the aforementioned "spaghetti" turned me on to best practices, MVC, and the Laravel Framework.  Somewhere along the way I picked up JavaScript and transitioned away from writing procedural JavaScript to writing object-oriented JavaScript, making use of the Revealing Module pattern.</p>
 
       <p>Web development is my primary hobby, and I'm always looking to learn new technologies and hone my skills. If you'd like to get in touch with me, use the <a class="gc-scroll" href="#contactMe">contact form</a> below and I'll get back to you as soon as possible.  Thank you!</p>
 
@@ -27,7 +27,7 @@
     <div class="col-md-4 gc-icon-title">
       <span class="glyphicon glyphicon-globe gc-content-icon"></span>
       <h1>Web Apps</h1>
-      <span class="glyphicon glyphicon-question-sign gc-content-details" data-toggle="modal" data-target="#webAppsModal"></span>
+      <span class="glyphicon glyphicon-info-sign gc-content-details" data-toggle="modal" data-target="#webAppsModal"></span>
     </div>
     <div class="col-md-8">
 
@@ -55,7 +55,7 @@
     <div class="col-md-4 gc-icon-title">
       <span class="glyphicon glyphicon-globe gc-content-icon"></span>
       <h1>Canvas Animations</h1>
-      <span class="glyphicon glyphicon-question-sign gc-content-details" data-toggle="modal" data-target="#canvasModal"></span>
+      <span class="glyphicon glyphicon-info-sign gc-content-details" data-toggle="modal" data-target="#canvasModal"></span>
     </div>
     <div class="col-md-8">
       <div class="gc-image-container">
