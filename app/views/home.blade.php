@@ -33,17 +33,17 @@
 
       <div class="gc-image-container">
         <p><a href="http://csllegal.com" target="_blank">California Sports Lawyer</a></p>
-        <a href="http://csllegal.com" target="_blank"><img class="img-responsive gc-border" src="gc/img/csl.png" /></a>
+        <a href="http://csllegal.com" target="_blank"><img width=750 height=75 class="img-responsive gc-border" src="gc/img/csl.png" /></a>
       </div>
 
       <div class="gc-image-container">
         <p><a href="http://californiasodcenter.com" target="_blank">California Sod Center</a></p>
-        <a href="http://californiasodcenter.com" target="_blank"><img class="img-responsive gc-border" src="gc/img/csc.png" /></a>
+        <a href="http://californiasodcenter.com" target="_blank"><img width=750 height=75 class="img-responsive gc-border" src="gc/img/csc.png" /></a>
       </div>
 
       <div class="gc-image-container">
         <p><a href="http://redalytics.greg-considine.com" target="_blank">Redalytics</a></p>
-        <a href="http://redalytics.greg-considine.com" target="_blank"><img class="img-responsive gc-border" src="gc/img/redalytics.png" /></a>
+        <a href="http://redalytics.greg-considine.com" target="_blank"><img width=750 height=75 class="img-responsive gc-border" src="gc/img/redalytics.png" /></a>
       </div>
 
     </div>
@@ -58,19 +58,20 @@
       <span class="glyphicon glyphicon-info-sign gc-content-details" data-toggle="modal" data-target="#canvasModal"></span>
     </div>
     <div class="col-md-8">
+
       <div class="gc-image-container">
         <p><a href="/animations/everywhere-usa">Everywhere, USA</a></p>
-        <a href="/animations/everywhere-usa"><img class="img-responsive gc-border" src="gc/img/everywhere.png" /></a>
+        <a href="/animations/everywhere-usa"><img width=750 height=75 class="img-responsive gc-border" src="gc/img/everywhere.png" /></a>
       </div>
 
       <div class="gc-image-container">
         <p><a href="/animations/forest-moon">Forest Moon</a></p>
-        <a href="/animations/forest-moon"><img class="img-responsive gc-border" src="gc/img/forest_moon.png" /></a>
+        <a href="/animations/forest-moon"><img width=750 height=75 class="img-responsive gc-border" src="gc/img/forest_moon.png" /></a>
       </div>
 
       <div class="gc-image-container">
         <p><a href="/animations/squares-and-triangles">Squares and Triangles</p></a>
-        <a href="/animations/squares-and-triangles"><img class="img-responsive gc-border" src="gc/img/s_and_t.png" /></a>
+        <a href="/animations/squares-and-triangles"><img width=750 height=75 class="img-responsive gc-border" src="gc/img/s_and_t.png" /></a>
       </div>
 
     </div>
@@ -104,7 +105,7 @@
                        });" id="contactButton" class="btn btn-default pull-right">Send</button>
 
       <div id="contactSuccess" class="pull-right gc-text-success" style="display:none">Thank You!</div>
-      <img id="contactSending" class="pull-right" style="display:none" src="/gc/img/loading.gif" />
+      <img width=32 height=32 id="contactSending" class="pull-right" style="display:none" src="/gc/img/loading.gif" />
       <div id="contactStatus" class="pull-left gc-contact-status text-danger" style="display:none"></div>
     </div>
   </div>
@@ -129,7 +130,7 @@
         </div>
         <div class="gc-project-entry">
           <a href="http://redalytics.greg-considine.com"><h4>Redalytics</h4></a>
-          <p>A fun project that I worked on over the course of a few weekends. It was my first attempt at creating a Single-page website, where all content is asynchronously loaded up front, then processed and displayed with JavaScript. Page navigation is just simple DOM manipulation -- there's no waiting for a response from the server after the initial wait to gather a user's post history, so the overall experience feels snappy like a native app.</p>
+          <p>A fun project that I worked on over the course of a few weekends. It was my first attempt at creating a single-page application, where all content is asynchronously loaded up front, then processed and displayed with JavaScript. Page navigation is just simple DOM manipulation -- there's no waiting for a response from the server after the initial wait to gather a user's post history, so the overall experience feels snappy like a native app.</p>
           <p>I think I got a little ahead of myself in the description. Redalytics is a tool that allows a user to gather all post history from a given reddit account and have it formatted and displayed in a way that's easy to navigate. There are also charts that show posting habits and frequencies, as well as a section for general information containing total karma count, trophies, top 3 best posts, top 3 worst posts, etc.</p>
         </div>
       </div>
@@ -156,7 +157,7 @@
         <div class="gc-project-entry">
           <a href="/animations/squares-and-triangles"><h4>Squares and Triangles</h4></a>
           <p><em>Squares and Triangles</em> was quickly made, and although I wasn't really satisfied with the general idea for this animation, I do like the artifacts that appear as the shapes are drawn, and as they're incompletely erased when the animation winds back around.</p>
-          <p><small>NOTE: The JavaScript source for these animations is left unminified so it can be easily viewed by visitors</small></p>
+          <p><small><b>NOTE:</b> The JavaScript source for these animations are left unminified so they can be easily viewed.</small></p>
         </div>
       </div>
     </div>
@@ -166,5 +167,5 @@
 @stop
 
 @section('scripts')
-  <script> logo('logoContent'); </script>
+  <script> gc.logo('logoContent'); </script>
 @stop

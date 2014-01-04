@@ -10,7 +10,6 @@ var logo = function (id) {
 
     container = document.getElementById(id);
     height = window.getComputedStyle(container).height;
-    console.log(height);
     width = height.substring(0, height.length - 2);
     height = width;
 

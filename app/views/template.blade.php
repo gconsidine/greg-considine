@@ -8,8 +8,8 @@
     <meta name="author" content="Greg Considine" />
     
     <title>Greg Considine | @yield('title')</title>
-     
-    <link href="/gc/css/bootstrap.css" rel="stylesheet" />
+
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet"> 
     <link href="/gc/css/gc.css" rel="stylesheet" />
     <link href="/gc/img/favicon.png" rel="shortcut icon" />
 
@@ -21,7 +21,6 @@
 
       ga('create', 'UA-46817449-1', 'greg-considine.com');
       ga('send', 'pageview');
-
     </script>
   </head>
   
@@ -56,16 +55,16 @@
       <div class="col-md-4 gc-built-with">
         <h3>Built With</h3>
         <div class="gc-content-divider"></div>
-        <img class="img-responsive pull-left" src="gc/img/laravel.png" />
-        <img class="img-responsive pull-left" src="gc/img/html5.png" />
-        <img class="img-responsive pull-left" src="gc/img/bootstrap.png" />
+        <a href="http://laravel.com" title="Laravel"><img width=75 height=52 class="img-responsive pull-left" src="gc/img/laravel.png" /></a>
+        <a href="http://en.wikipedia.org/wiki/HTML5" title="HTML5"><img width=75 height=75 class="img-responsive pull-left" src="gc/img/html5.png" /></a>
+        <a href="http://getbootstrap.com" title="Twitter Bootstrap"><img width=75 height=75 class="img-responsive pull-left" src="gc/img/bootstrap.png" /></a>
         <div style="clear:both"></div>
       </div>
       <div class="col-md-3 gc-connect">
         <h3>Connect</h3>
         <div class="gc-content-divider"></div>
-        <a href="http://www.linkedin.com/pub/greg-considine/60/384/710"><img class="img-responsive pull-left" src="gc/img/linkedin.png" /></a>
-        <a href="https://github.com/gconsidine"><img class="img-responsive pull-left" src="gc/img/github.png" /></a>
+        <a href="http://www.linkedin.com/pub/greg-considine/60/384/710" title="LinkedIn"><img width=75 height=75 class="img-responsive pull-left" src="gc/img/linkedin.png" /></a>
+        <a href="https://github.com/gconsidine" title="GitHub"><img width=75 height=75 class="img-responsive pull-left" src="gc/img/github.png" /></a>
         <div style="clear:both"></div>
       </div>
       <div class="col-md-5 gc-info">
@@ -79,14 +78,9 @@
     </div>
 
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script> 
-    <script src="/gc/js/bootstrap.js"></script>
-    <script src="/gc/js/logo.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
     <script src="/gc/js/gc.js"></script>
-
-    <script>
-      logo('logoHeader');
-    </script>
-    
+    <script> gc.logo('logoHeader'); </script>
 
     @yield('scripts')
 

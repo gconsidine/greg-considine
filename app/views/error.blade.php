@@ -22,9 +22,8 @@
     <div class="gc-error-container">
       We've encoutered an error.  <a href="/">Return home?</a>
     </div>
-    <script src="/gc/js/logo.js"></script>
-    <script>
-      logo('logoError'); 
-    </script>
+
+    <script src="/gc/js/gc.js"></script>
+    <script> gc.logo('logoError'); </script>
   </body>
 </html>
