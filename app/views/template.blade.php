@@ -57,6 +57,7 @@
         <a title="Laravel"><img width=75 height=52 class="img-responsive pull-left" src="gc/img/laravel.png" /></a>
         <a title="HTML5"><img width=75 height=75 class="img-responsive pull-left" src="gc/img/html5.png" /></a>
         <a title="Twitter Bootstrap"><img width=75 height=75 class="img-responsive pull-left" src="gc/img/bootstrap.png" /></a>
+        <a title="Grunt"><img width=75 height=75 class="img-responsive pull-left" src="gc/img/grunt.png"></a>
         <div style="clear:both"></div>
       </div>
       <div class="col-md-3 gc-connect">
