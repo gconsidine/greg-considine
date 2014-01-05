@@ -46,9 +46,14 @@ a:hover {
 .navbar-default .navbar-toggle:focus {
   background-color: transparent;
 }
+
 .navbar-default .navbar-toggle:hover .icon-bar, 
 .navbar-default .navbar-toggle:focus .icon-bar {
   background-color: #6a9859;
+}
+
+.form-control {
+  max-width: 100%;  
 }
 
 .form-control:focus {

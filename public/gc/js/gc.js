@@ -59,7 +59,9 @@ var gc = (function () {
     var contactButton = document.getElementById('contactButton'),
         contactStatus = document.getElementById('contactStatus'),
         contactSending = document.getElementById('contactSending'),
-        contactSuccess = document.getElementById('contactSuccess');
+        contactSuccess = document.getElementById('contactSuccess'),
+        userMessage = document.getElementById('userMessage'),
+        userEmail = document.getElementById('userEmail');
 
     if(message === 'pending') {
       contactButton.style.display = 'none';
@@ -70,6 +72,8 @@ var gc = (function () {
       contactButton.style.display = 'none';
       contactSending.style.display = 'none';
       contactSuccess.style.display = 'block';
+      userMessage.readOnly = 'readonly';
+      userEmail.readOnly = 'readonly';
     } else {
       contactSending.style.display = 'none';
       contactStatus.innerHTML = 'Invalid submission';
