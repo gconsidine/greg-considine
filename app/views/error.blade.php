@@ -23,7 +23,7 @@
       We've encoutered an error.  <a href="/">Return home?</a>
     </div>
 
-    <script src="/gc/js/gc.js"></script>
+    <script src="/gc/js/gc.min.js?v={{filemtime('gc/js/gc.min.js')}}"></script>
     <script> gc.logo('logoError'); </script>
   </body>
 </html>
