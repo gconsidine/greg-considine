@@ -126,7 +126,7 @@
         </div>
         <div class="gc-project-entry">
           <a href="http://californiasodcenter.com"><h4>California Sod Center</h4></a>
-          <p>This iteration of californiasodcenter.com was completely redesigned from the ground up. PHP and MySQL are used heavily throughout the site for scalability and ease of maintenance. It's an e-commerce site that allows customers to easily purchase sod and sod-related items quickly and securely using Authorize.net as a payment gateway.</p>
+          <p>This iteration of californiasodcenter.com was completely redesigned from the ground up. It's an e-commerce site that allows customers to easily purchase sod and sod-related items quickly and securely using Authorize.net as a payment gateway.</p>
         </div>
         <div class="gc-project-entry">
           <a href="http://redalytics.greg-considine.com"><h4>Redalytics</h4></a>
@@ -148,7 +148,7 @@
       <div class="modal-body">
         <div class="gc-project-entry">
           <a href="/animations/everywhere-usa"><h4>Everywhere, USA</h4></a>
-          <p>This animation was made over the course of a day or two as a class project.  It was one of my first attempts at working with HTML5 canvas, and my first attempt at a side-scrolling animation.  Projects were due on a weekly basis in this particular class, so I was never able to squeeze as much detail as I wanted into anything I created.  I plan on doing more in the future.  This animation features a little truck putt-putting along, and was inspired by a road trip I took up the 5 Freeway a few years ago.</p>
+          <p>This animation was made over the course of a day or two as a class project.  It was one of my first attempts at working with HTML5 canvas, and my first attempt at a side-scrolling animation.  Projects were due on a weekly basis in this particular class, so I was never able to squeeze as much detail as I wanted into anything I created.  This animation features a little truck putt-putting along, and was inspired by a road trip I took up the 5 Freeway a few years ago.</p>
         </div>
         <div class="gc-project-entry">
           <a href="/animations/forest-moon"><h4>Forest Moon</h4></a>
