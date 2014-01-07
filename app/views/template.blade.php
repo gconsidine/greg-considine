@@ -9,7 +9,13 @@
     
     <title>Greg Considine | @yield('title')</title>
 
-    <link href="/gc/css/gc.min.css?v={{filemtime('gc/css/gc.min.css')}}" rel="stylesheet" />
+    @if(App::environment() === 'development')
+      <link href="/gc/css/bootstrap.css" rel="stylesheet" />
+      <link href="/gc/css/gc.css" rel="stylesheet" />
+    @else
+      <link href="/gc/css/gc.min.css?v={{filemtime('gc/css/gc.min.css')}}" rel="stylesheet" />
+    @endif
+
     <link href="/gc/img/favicon.png" rel="shortcut icon" />
 
     <script>
@@ -77,10 +83,17 @@
       </div>
     </div>
 
-    <script src="/gc/js/gc.min.js?v={{filemtime('gc/js/gc.min.js')}}"></script>
+    @if(App::environment() === 'development')
+      <script src="/gc/js/jquery-1.10.2.js"></script>
+      <script src="/gc/js/bootstrap.js"></script>
+      <script src="/gc/js/gc.js"></script>
+    @else
+      <script src="/gc/js/gc.min.js?v={{filemtime('gc/js/gc.min.js')}}"></script>
+    @endif
+
     <script> gc.logo('logoHeader'); </script>
 
     @yield('scripts')
-
+    
   </body>
 </html>
