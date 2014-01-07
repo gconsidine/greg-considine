@@ -11893,10 +11893,6 @@ var gc = (function () {
       canvas.width = width;
       canvas.height = height;
 
-      canvas.addEventListener('mouseover', function () {
-        setInterval(animate, 17);
-      });
-
       context = canvas.getContext('2d');
       container.appendChild(canvas);
 
