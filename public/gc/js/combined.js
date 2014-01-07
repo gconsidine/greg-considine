@@ -11872,16 +11872,18 @@ var gc = (function () {
     }
   }
 
-  var logo = function (id) {
+  var logo = function (containerId) {
    
     var container,
         canvas,
         context,
+        id,
         width = 0,
         height = 0;
     
     var initialize = (function () {
 
+      id = containerId;
       container = document.getElementById(id);
       height = window.getComputedStyle(container).height;
       width = height.substring(0, height.length - 2);
@@ -11891,6 +11893,10 @@ var gc = (function () {
       canvas.width = width;
       canvas.height = height;
 
+      canvas.addEventListener('mouseover', function () {
+        setInterval(animate, 17);
+      });
+
       context = canvas.getContext('2d');
       container.appendChild(canvas);
 
@@ -11898,13 +11904,14 @@ var gc = (function () {
 
     }());
 
-    function draw (backgroundColor, strokeColor) {
+    function draw () {
 
       var length = width * 0.3,
           x = width / 2,
           y = height / 2,
           lineWidth = width * 0.05;
-      
+
+      context.clearRect(0, 0, width, height);
       context.beginPath();
       context.moveTo(x, y);
 
@@ -11925,9 +11932,6 @@ var gc = (function () {
       context.strokeStyle = '#6b4776';
       context.stroke();
 
-    }
-
-    function animate() {
     }
 
   };
