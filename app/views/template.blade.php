@@ -13,7 +13,7 @@
       <link href="/gc/css/bootstrap.css" rel="stylesheet" />
       <link href="/gc/css/gc.css" rel="stylesheet" />
     @else
-      <link href="/gc/css/gc.min.css?v={{filemtime('gc/css/gc.min.css')}}" rel="stylesheet" />
+      <link href="/gc/css/gc.min.css?modified={{filemtime('gc/css/gc.min.css')}}" rel="stylesheet" />
     @endif
 
     <link href="/gc/img/favicon.png" rel="shortcut icon" />
@@ -88,7 +88,7 @@
       <script src="/gc/js/bootstrap.js"></script>
       <script src="/gc/js/gc.js"></script>
     @else
-      <script src="/gc/js/gc.min.js?v={{filemtime('gc/js/gc.min.js')}}"></script>
+      <script src="/gc/js/gc.min.js?modified={{filemtime('gc/js/gc.min.js')}}"></script>
     @endif
 
     <script> gc.logo('logoHeader'); </script>
