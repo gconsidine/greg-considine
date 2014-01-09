@@ -9,8 +9,10 @@ Route::group(['before' => 'csrf'], function () {
 });
 
 /* Unused subdomain catch-all, redirect to home */
-Route::group(['domain' => '{innactiveSubdomain}.greg-considine.com'], function () {
-  return Redirect::to('/');
+Route::group(['domain' => '{inactiveSubdomain}.greg-considine.com'], function () {
+  Route::get('/', function () {
+    return Redirect::to('http://greg-considine.com');
+  });
 });
 
 /* Catch-all/home route */
