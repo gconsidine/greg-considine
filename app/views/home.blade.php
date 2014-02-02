@@ -43,19 +43,19 @@
       <div class="gc-image-container">
         <p><a href="http://csllegal.com" target="_blank">California Sports Lawyer</a></p>
         <a href="http://csllegal.com" target="_blank"><img width="750" height="75" 
-           class="img-responsive gc-border" src="gc/img/csl.png" /></a>
+           class="img-responsive gc-border" src="gc/img/prod/csl.png" /></a>
       </div>
 
       <div class="gc-image-container">
         <p><a href="http://californiasodcenter.com" target="_blank">California Sod Center</a></p>
         <a href="http://californiasodcenter.com" target="_blank"><img width="750" height="75" 
-           class="img-responsive gc-border" src="gc/img/csc.png" /></a>
+           class="img-responsive gc-border" src="gc/img/prod/csc.png" /></a>
       </div>
 
       <div class="gc-image-container">
         <p><a href="http://redalytics.greg-considine.com" target="_blank">Redalytics</a></p>
         <a href="http://redalytics.greg-considine.com" target="_blank"><img width="750" height="75" 
-           class="img-responsive gc-border" src="gc/img/redalytics.png" /></a>
+           class="img-responsive gc-border" src="gc/img/prod/redalytics.png" /></a>
       </div>
 
     </div>
@@ -74,19 +74,19 @@
       <div class="gc-image-container">
         <p><a href="/animations/everywhere-usa">Everywhere, USA</a></p>
         <a href="/animations/everywhere-usa"><img width="750" height="75" 
-           class="img-responsive gc-border" src="gc/img/everywhere.png" /></a>
+           class="img-responsive gc-border" src="gc/img/prod/everywhere.png" /></a>
       </div>
 
       <div class="gc-image-container">
         <p><a href="/animations/forest-moon">Forest Moon</a></p>
         <a href="/animations/forest-moon"><img width="750" height="75" 
-           class="img-responsive gc-border" src="gc/img/forest_moon.png" /></a>
+           class="img-responsive gc-border" src="gc/img/prod/forest_moon.png" /></a>
       </div>
 
       <div class="gc-image-container">
         <p><a href="/animations/squares-and-triangles">Squares and Triangles</p></a>
         <a href="/animations/squares-and-triangles"><img width="750" height="75" 
-           class="img-responsive gc-border" src="gc/img/s_and_t.png" /></a>
+           class="img-responsive gc-border" src="gc/img/prod/s_and_t.png" /></a>
       </div>
 
     </div>
@@ -121,7 +121,7 @@
                        });" id="contactButton" class="btn btn-default pull-right">Send</button>
 
       <div id="contactSuccess" class="pull-right gc-text-success" style="display:none">Thank You!</div>
-      <img width=32 height=32 id="contactSending" class="pull-right" style="display:none" src="/gc/img/loading.gif" />
+      <img width=32 height=32 id="contactSending" class="pull-right" style="display:none" src="/gc/img/prod/loading.gif" />
       <div id="contactStatus" class="pull-left gc-contact-status text-danger" style="display:none"></div>
     </div>
   </div>

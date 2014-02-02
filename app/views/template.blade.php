@@ -16,7 +16,7 @@
       <link href="/gc/css/gc.min.css?modified={{filemtime('gc/css/gc.min.css')}}" rel="stylesheet" />
     @endif
 
-    <link href="/gc/img/favicon.png" rel="shortcut icon" />
+    <link href="/gc/img/prod/favicon.png" rel="shortcut icon" />
 
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -61,18 +61,18 @@
       <div class="col-md-4 gc-built-with">
         <h3>Built With</h3>
         <div class="gc-content-divider"></div>
-        <a title="Laravel"><img width="75" height="52" class="img-responsive pull-left" src="gc/img/laravel.png" /></a>
-        <a title="HTML5"><img width="75" height="75" class="img-responsive pull-left" src="gc/img/html5.png" /></a>
-        <a title="Twitter Bootstrap"><img width="75" height="75" class="img-responsive pull-left" src="gc/img/bootstrap.png" /></a>
-        <a title="Grunt"><img width="75" height="75" class="img-responsive pull-left" src="gc/img/grunt.png"></a>
+        <a title="Laravel"><img width="75" height="52" class="img-responsive pull-left" src="gc/img/prod/laravel.png" /></a>
+        <a title="HTML5"><img width="75" height="75" class="img-responsive pull-left" src="gc/img/prod/html5.png" /></a>
+        <a title="Twitter Bootstrap"><img width="75" height="75" class="img-responsive pull-left" src="gc/img/prod/bootstrap.png" /></a>
+        <a title="Grunt"><img width="75" height="75" class="img-responsive pull-left" src="gc/img/prod/grunt.png"></a>
         <div style="clear:both"></div>
       </div>
 
       <div class="col-md-3 gc-connect">
         <h3>Connect</h3>
         <div class="gc-content-divider"></div>
-        <a href="http://www.linkedin.com/pub/greg-considine/60/384/710" title="LinkedIn" target="_blank"><img width="75" height="75" class="img-responsive pull-left" src="gc/img/linkedin.png" /></a>
-        <a href="https://github.com/gconsidine" title="GitHub" target="_blank"><img width="75" height="75" class="img-responsive pull-left" src="gc/img/github.png" /></a>
+        <a href="http://www.linkedin.com/pub/greg-considine/60/384/710" title="LinkedIn" target="_blank"><img width="75" height="75" class="img-responsive pull-left" src="gc/img/prod/linkedin.png" /></a>
+        <a href="https://github.com/gconsidine" title="GitHub" target="_blank"><img width="75" height="75" class="img-responsive pull-left" src="gc/img/prod/github.png" /></a>
         <div style="clear:both"></div>
       </div>
 
