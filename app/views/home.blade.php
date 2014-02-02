@@ -42,20 +42,23 @@
 
       <div class="gc-image-container">
         <p><a href="http://csllegal.com" target="_blank">California Sports Lawyer</a></p>
-        <a href="http://csllegal.com" target="_blank"><img width="750" height="75" 
-           class="img-responsive gc-border" src="gc/img/prod/csl.png" /></a>
+        <a href="http://csllegal.com" target="_blank">
+          <div class="img-responsive gc-project-sprite gc-sprite-csl gc-border"></div>
+        </a>
       </div>
 
       <div class="gc-image-container">
         <p><a href="http://californiasodcenter.com" target="_blank">California Sod Center</a></p>
-        <a href="http://californiasodcenter.com" target="_blank"><img width="750" height="75" 
-           class="img-responsive gc-border" src="gc/img/prod/csc.png" /></a>
+        <a href="http://californiasodcenter.com" target="_blank">
+          <div class="img-responsive gc-project-sprite gc-sprite-csc gc-border"></div>
+        </a>
       </div>
 
       <div class="gc-image-container">
         <p><a href="http://redalytics.greg-considine.com" target="_blank">Redalytics</a></p>
-        <a href="http://redalytics.greg-considine.com" target="_blank"><img width="750" height="75" 
-           class="img-responsive gc-border" src="gc/img/prod/redalytics.png" /></a>
+        <a href="http://redalytics.greg-considine.com" target="_blank">
+          <div class="img-responsive gc-project-sprite gc-sprite-redalytics gc-border"></div>
+        </a>
       </div>
 
     </div>
@@ -73,20 +76,23 @@
 
       <div class="gc-image-container">
         <p><a href="/animations/everywhere-usa">Everywhere, USA</a></p>
-        <a href="/animations/everywhere-usa"><img width="750" height="75" 
-           class="img-responsive gc-border" src="gc/img/prod/everywhere.png" /></a>
+        <a href="/animations/everywhere-usa">
+          <div class="img-responsive gc-project-sprite gc-sprite-everywhere gc-border"></div>
+        </a>
       </div>
 
       <div class="gc-image-container">
         <p><a href="/animations/forest-moon">Forest Moon</a></p>
-        <a href="/animations/forest-moon"><img width="750" height="75" 
-           class="img-responsive gc-border" src="gc/img/prod/forest_moon.png" /></a>
+        <a href="/animations/forest-moon">
+          <div class="img-responsive gc-project-sprite gc-sprite-forest gc-border"></div>
+        </a>
       </div>
 
       <div class="gc-image-container">
         <p><a href="/animations/squares-and-triangles">Squares and Triangles</p></a>
-        <a href="/animations/squares-and-triangles"><img width="750" height="75" 
-           class="img-responsive gc-border" src="gc/img/prod/s_and_t.png" /></a>
+        <a href="/animations/squares-and-triangles">
+          <div class="img-responsive gc-project-sprite gc-sprite-squares gc-border"></div>
+        </a>
       </div>
 
     </div>

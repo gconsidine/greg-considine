@@ -61,18 +61,30 @@
       <div class="col-md-4 gc-built-with">
         <h3>Built With</h3>
         <div class="gc-content-divider"></div>
-        <a title="Laravel"><img width="75" height="52" class="img-responsive pull-left" src="gc/img/prod/laravel.png" /></a>
-        <a title="HTML5"><img width="75" height="75" class="img-responsive pull-left" src="gc/img/prod/html5.png" /></a>
-        <a title="Twitter Bootstrap"><img width="75" height="75" class="img-responsive pull-left" src="gc/img/prod/bootstrap.png" /></a>
-        <a title="Grunt"><img width="75" height="75" class="img-responsive pull-left" src="gc/img/prod/grunt.png"></a>
+        <a title="Laravel">
+          <div class="pull-left gc-icon-sprite gc-sprite-laravel"></div>
+        </a>
+        <a title="HTML5">
+          <div class="pull-left gc-icon-sprite gc-sprite-html"></div>
+        </a>
+        <a title="Twitter Bootstrap">
+          <div class="pull-left gc-icon-sprite gc-sprite-bootstrap"></div>
+        </a>
+        <a title="Grunt">
+          <div class="pull-left gc-icon-sprite gc-sprite-grunt"></div>
+        </a>
         <div style="clear:both"></div>
       </div>
 
       <div class="col-md-3 gc-connect">
         <h3>Connect</h3>
         <div class="gc-content-divider"></div>
-        <a href="http://www.linkedin.com/pub/greg-considine/60/384/710" title="LinkedIn" target="_blank"><img width="75" height="75" class="img-responsive pull-left" src="gc/img/prod/linkedin.png" /></a>
-        <a href="https://github.com/gconsidine" title="GitHub" target="_blank"><img width="75" height="75" class="img-responsive pull-left" src="gc/img/prod/github.png" /></a>
+        <a href="http://www.linkedin.com/pub/greg-considine/60/384/710" title="LinkedIn" target="_blank">
+          <div class="pull-left gc-icon-sprite gc-sprite-linkedin"></div>
+        </a>
+        <a href="https://github.com/gconsidine" title="GitHub" target="_blank">
+          <div class="pull-left gc-icon-sprite gc-sprite-github"></div>
+        </a>
         <div style="clear:both"></div>
       </div>
 
