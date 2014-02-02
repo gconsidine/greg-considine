@@ -51,11 +51,15 @@
 
     @yield('content')
 
-    <script src="/gc/js/logo.js"></script>
+    @if(App::environment() === 'development')
+      <script src="/gc/js/jquery-1.10.2.js"></script>
+      <script src="/gc/js/bootstrap.js"></script>
+      <script src="/gc/js/gc.js"></script>
+    @else
+      <script src="/gc/js/gc.min.js?modified={{filemtime('gc/js/gc.min.js')}}"></script>
+    @endif
 
-    <script>
-      logo('logoLinkBack');
-    </script>
+    <script>gc.logo('logoLinkBack');</script>
 
     @yield('scripts')
 
