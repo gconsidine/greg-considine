@@ -1,4 +1,4 @@
-####My development portfolio and hobby site
+####Development Portfolio / Hobby Site
 [greg-considine.com](http://greg-considine.com)
 
 Thanks for taking a look around.

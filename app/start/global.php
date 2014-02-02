@@ -15,7 +15,9 @@ ClassLoader::addDirectories(array(
 
 	app_path().'/commands',
 	app_path().'/controllers',
+  app_path().'/controllers/netanoids',
 	app_path().'/models',
+  app_path().'/models/netanoids',
 	app_path().'/database/seeds',
 
 ));
@@ -51,7 +53,9 @@ Log::useDailyFiles(storage_path().'/logs/'.$logFile);
 App::error(function(Exception $exception, $code)
 {
 	Log::error($exception);
-  return View::make('error');
+  if(App::environment() !=='development') {
+    return View::make('error');
+  }
 });
 
 /*

@@ -1,5 +1,8 @@
 <?php
 
+/* Set TLD to be used in subdomain routes based on environment */
+$tld = App::environment() === 'production' ? 'com' : 'tld';
+
 Route::get('/animations/{animation}', 'AnimationController@display')
 ->where('animation', '(everywhere-usa|forest-moon|squares-and-triangles)');
 
@@ -9,16 +12,14 @@ Route::group(['before' => 'csrf'], function () {
 });
 
 /* Netanoids API called by the Android App: Netanoids */
-Route::group(['domain' => 'netanoids.greg-considine.com'], function () {
-
-  Route::controller('/{species}/{mood}/{type}/{input}', 'ApiController');
+Route::group(['domain' => "netanoids.greg-considine.$tld"], function () {
+  Route::controller('/api/{species}/{mood}/{type}/{input}', 'ApiController');
 
   Route::get('/', function() {
     return '{
       "status" : "fail"
     }';
   });
-
 });
 
 /* Unused subdomain catch-all, redirect to home */
