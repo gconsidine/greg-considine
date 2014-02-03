@@ -5,35 +5,35 @@ class ApiController extends BaseController {
   private $species;
   private $moods;
   private $types;
-  private $request;
+  private $userInputs;
   private $error;
   
   /* Populate arrays with all supported species, moods, types, and input */
   public function __construct() {
     $this->species = ['0'];
     $this->moods = ['playful'];
-    $this->types = ['text', 'picture', 'video'];
-    //TODO: inputs
+    $this->types = ['text', 'image', 'video'];
+    $this->userInputs = ['yes', 'no'];
   }
 
-	public function getIndex($species, $mood, $type, $input) {
-    if(!$this->validateRequest($species, $mood, $type, $input)) {
+	public function getIndex($species, $mood, $type, $userInput) {
+    if(!$this->validateRequest($species, $mood, $type, $userInput)) {
       return $this->getErrorMessage();  
     }
     
     $sourceController = new SourceController();
-    $sources = $sourceController->getSourcesByMood($mood);
+    $source = $sourceController->getSource($mood, $type);
 
-    $scrapeController = new ScrapeController();
-    $response = $scrapeController->getResponseByType($sources, $type);
+    $parseController = new ParseController();
+    $response = $parseController->getResponse($source);
 
 		return $response;
 	}
   
   /* Verify request is supported */
-  private function validateRequest($species, $mood, $type, $input) {
+  private function validateRequest($species, $mood, $type, $userInput) {
     if($this->validateSpecies($species) && $this->validateMood($mood) 
-       && $this->validateType($type)) {
+       && $this->validateType($type) && $this->validateUserInput($userInput)) {
       return true;
     } else {
       return false;
@@ -46,7 +46,6 @@ class ApiController extends BaseController {
       return false;
     }
 
-    $this->request[] = $species;
     return true;
   }
   
@@ -56,7 +55,6 @@ class ApiController extends BaseController {
       return false;
     }
 
-    $this->request[] = $mood;
     return true;
   }
 
@@ -66,7 +64,15 @@ class ApiController extends BaseController {
       return false;
     }
 
-    $this->request[] = $type;
+    return true;
+  }
+
+  private function validateUserInput($userInput) {
+    if(!in_array($userInput, $this->userInputs)) {
+      $this->error = 'invalid user input';
+      return false;
+    }
+
     return true;
   }
   
