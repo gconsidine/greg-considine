@@ -11,17 +11,6 @@ Route::group(['before' => 'csrf'], function () {
   Route::post('/contact', 'ContactController@sendMessage');
 });
 
-/* Netanoids API called by the Android App: Netanoids */
-Route::group(['domain' => "netanoids.greg-considine.$tld"], function () {
-  Route::controller('/api/{species}/{mood}/{type}/{input}', 'ApiController');
-
-  Route::get('/', function() {
-    return '{
-      "status" : "fail"
-    }';
-  });
-});
-
 /* Unused subdomain catch-all, redirect to home */
 Route::group(['domain' => '{inactiveSubdomain}.greg-considine.com'], function () {
   Route::get('/', function () {
