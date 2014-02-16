@@ -1,7 +1,7 @@
 module.exports = function (grunt) {
 
   /* Path to folder containing css/ and js/ */
-  var path = "/var/www/gc/public/gc/";
+  var path = __dirname + "/public/gc/";
 
   grunt.initConfig({
 
@@ -35,7 +35,7 @@ module.exports = function (grunt) {
     uglify: {
       js: {
         files: {
-          "/var/www/gc/public/gc/js/gc.min.js": [path + "js/combined.js"]
+          "public/gc/js/gc.min.js": [path + "js/combined.js"]
         }
       }
     },
