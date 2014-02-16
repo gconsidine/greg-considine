@@ -1,7 +1,6 @@
 /bootstrap/compiled.php
 /vendor
 /node_modules
-/app/config/mail.php
 composer.phar
 composer.lock
 .DS_Store
