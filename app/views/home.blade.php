@@ -13,11 +13,6 @@
       <h1>Thanks for Visiting</h1>
 
       <div class="gc-content-divider"></div>
-
-      <p>Here you'll find a mixed bag of projects I've worked on in my free time.  My primary focus in the last couple of 
-         years has been web development while I finish an undergraduate degree in Interdisciplinary Computing and the Arts 
-         and Computer Science at the University of California, San Diego.</p>
-
       <p>Originally, I started doing web development out of curiosity (having only worked with C, C++, and Java in an 
          academic setting), beginning first with static HTML/CSS-only sites, then moving to data-driven PHP + MySQL web 
          applications (full of spaghetti code). Having to maintain the aforementioned "spaghetti" turned me on to best 
