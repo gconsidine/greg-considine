@@ -1,11 +1,12 @@
 @font-face {
   font-family: 'geo';
-  src: url('../fonts/geo.ttf');
-}
-
-@font-face {
-  font-family: 'geo-italic';
-  src: url('../fonts/geo_italic.ttf');
+  src: url('geo-webfont.eot');
+  src: url('geo-webfont.eot?#iefix') format('embedded-opentype'),
+       url('geo-webfont.svg#geosanslightregular') format('svg'),
+       url('geo-webfont.woff') format('woff'),
+       url('geo-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* Bootstrap Overrides */
@@ -92,10 +93,6 @@ a:hover {
 }
 
 /* greg-considine.com specific */
-em {
-  font-family: 'geo-italic';
-}
-
 .gc-border {
   border: 1px solid #6a9859;
 }
