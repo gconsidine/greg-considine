@@ -75,6 +75,7 @@ module.exports = function (grunt) {
         command: [
           'cp bower_components/bootstrap/dist/js/bootstrap.js public/gc/js',
           'cp bower_components/bootstrap/dist/css/bootstrap.css public/gc/css',
+          'cp bower_components/bootstrap/dist/css/bootstrap.css.map public/gc/css',
           'cp bower_components/bootstrap/dist/fonts/* public/gc/fonts'
         ].join('&&')
       },

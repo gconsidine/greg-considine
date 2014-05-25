@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'geo';
-  src: url('geo-webfont.eot');
-  src: url('geo-webfont.eot?#iefix') format('embedded-opentype'),
-       url('geo-webfont.svg#geosanslightregular') format('svg'),
-       url('geo-webfont.woff') format('woff'),
-       url('geo-webfont.ttf') format('truetype');
+  src: url('/gc/fonts/geo-webfont.eot');
+  src: url('/gc/fonts/geo-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/gc/fonts/geo-webfont.svg#geosanslightregular') format('svg'),
+       url('/gc/fonts/geo-webfont.woff') format('woff'),
+       url('/gc/fonts/geo-webfont.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
