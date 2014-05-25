@@ -11,7 +11,7 @@ module.exports = function (grunt) {
     concat : {
       js: {
         src: [
-          path + "js/jquery-1.10.2.js",
+          path + "js/jquery.js",
           path + "js/bootstrap.js", 
           path + "js/gc.js"
         ],
@@ -55,13 +55,36 @@ module.exports = function (grunt) {
     /* Semantic versioning */
     bump: {
       options : {
-        files: ["package.json"],
+        files: ["package.json", "bower.json"],
         updateConfigs: [],
         commit: false,
         createTag: true,
         tagName: "v%VERSION%",
         tagMessage: "Version %VERSION%",
         push: false
+      }
+    },
+
+    /* Shell commands for removing temp files and moving essential bower_components */
+    shell: {
+      copyJquery: {
+        command: 'cp bower_components/jquery/dist/jquery.js public/gc/js'
+      },
+
+      copyBootstrap: {
+        command: [
+          'cp bower_components/bootstrap/dist/js/bootstrap.js public/gc/js',
+          'cp bower_components/bootstrap/dist/css/bootstrap.css public/gc/css',
+          'cp bower_components/bootstrap/dist/css/bootstrap.css.map public/gc/css',
+          'cp bower_components/bootstrap/dist/fonts/* public/gc/fonts'
+        ].join('&&')
+      },
+
+      cleanUp: {
+        command: [
+          'rm public/gc/js/combined.js',
+          'rm public/gc/css/combined.css'
+        ].join('&&')
       }
     }
 
@@ -71,13 +94,20 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks("grunt-contrib-uglify");
   grunt.loadNpmTasks("grunt-contrib-cssmin");
   grunt.loadNpmTasks("grunt-contrib-imagemin");
+  grunt.loadNpmTasks("grunt-shell");
   grunt.loadNpmTasks("grunt-bump");
 
-  grunt.registerTask("default", [
+  grunt.registerTask("default", []);
+
+  grunt.registerTask("build", [
+    "shell:copyJquery",
+    "shell:copyBootstrap",
     "concat:js",
     "concat:css",
     "cssmin:css",
     "uglify:js",
-    "imagemin"
+    "imagemin",
+    "shell:cleanUp"
   ]);
+
 };
