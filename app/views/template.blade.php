@@ -25,6 +25,7 @@
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
       ga('create', '{{ getenv("GA") }}', 'greg-considine.com');
+      ga('require', 'displayfeatures');
       ga('send', 'pageview');
     </script>
   </head>
