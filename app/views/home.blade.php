@@ -5,29 +5,33 @@
 @section('content')
 
 <div class="container">
-  <div class="gc-content">
+  <div class="gc-content gc-top-content">
     <div class="col-md-4">
       <div id="logoContent" class="gc-logo-content" style="height: 300px;"></div>
     </div>
+
     <div class="col-md-8 gc-welcome-container">
       <h1>Thanks for Visiting</h1>
 
       <div class="gc-content-divider"></div>
       <p>
-        Originally, I started doing web development out of curiosity (having only worked with C, 
-        C++, and Java in an academic setting), beginning first with static HTML/CSS-only sites, 
-        then moving to data-driven PHP + MySQL web applications (full of spaghetti code). Having 
-        to maintain the aforementioned "spaghetti" turned me on to best practices, MVC, and the 
-        Laravel Framework. Somewhere along the way I picked up JavaScript and transitioned away 
-        from writing procedural JavaScript to writing object-oriented JavaScript, and more 
-        recently CommonJS modules + Browserify.
+        I'm currently interested (obsessed, really) with full-stack development.  At work, I
+        primarily use a technology stack (or some portion of it) that I sometimes refer to 
+        (while planting my tongue firmly in my cheek) as the NAPALM stack: 
+        Node.js-AngularJS-PHP-Apache-Linux-MySQL.  Outside of the office, I'm becoming more 
+        invested in the MongoDB, Express, AngularJS, and Node.js world.
       </p>
 
       <p>
-        Web development is my primary hobby, and I'm always looking to learn new technologies and 
-        hone my skills.  If you'd like to get in touch with me, use the <a class="gc-scroll" 
-        href="#contactMe">contact form</a> below and I'll get back to you as soon as possible.  
-        Thank you!
+        When I'm not immersed in something technical, I find myself becoming more interested in the 
+        wisdom handed down from the elders of the industry, and the history of the industry itself.
+      </p>
+
+      <p>
+        Software is my profession and primary hobby and I'm always looking to learn new 
+        technologies and to hone my skills.  If you'd like to get in touch with me, use the 
+        <a class="gc-scroll" href="#contactMe">contact form</a> below and I'll get back to you as 
+        soon as possible.  Thank you!
       </p>
 
     </div>
@@ -39,8 +43,10 @@
     <div class="col-md-4 gc-icon-title">
       <span class="glyphicon glyphicon-globe gc-content-icon"></span>
       <h1>Web Apps</h1>
-      <span class="glyphicon glyphicon-info-sign gc-content-details" data-toggle="modal" 
-            data-target="#webAppsModal"></span>
+      <div class="gc-link" data-toggle="modal" data-target="#webAppsModal">
+        <span class="glyphicon glyphicon-info-sign gc-content-details"></span>
+        <p >(click for info)</p>
+      </div>
     </div>
     <div class="col-md-8">
 
@@ -74,8 +80,10 @@
     <div class="col-md-4 gc-icon-title">
       <span class="glyphicon glyphicon-picture gc-content-icon"></span>
       <h1>Canvas Animations</h1>
-      <span class="glyphicon glyphicon-info-sign gc-content-details" data-toggle="modal" 
-            data-target="#canvasModal"></span>
+      <div class="gc-link" data-toggle="modal" data-target="#canvasModal">
+        <span class="glyphicon glyphicon-info-sign gc-content-details"></span>
+        <p >(click for info)</p>
+      </div>
     </div>
     <div class="col-md-8">
 
@@ -103,6 +111,23 @@
     </div>
   </div>
 </div>
+
+<div id="openSource" class="container">
+  <div class="gc-content">
+    <div class="col-md-4 gc-icon-title">
+      <span class="glyphicon glyphicon-heart-empty gc-content-icon"></span>
+      <h1>Open Source</h1>
+      <div class="gc-link" data-toggle="modal" data-target="#openSourceModal">
+        <span class="glyphicon glyphicon-info-sign gc-content-details"></span>
+        <p >(click for info)</p>
+      </div>
+    </div>
+    <div class="col-md-8">
+
+    </div>
+  </div>
+</div>
+
 
 <div id="contactMe" class="container">
   <div class="gc-content">

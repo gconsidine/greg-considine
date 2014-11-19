@@ -1,8 +1,5 @@
 <?php
 
-/* Set TLD to be used in subdomain routes based on environment */
-$tld = App::environment() === 'production' ? 'com' : 'tld';
-
 Route::get('/animations/{animation}', 'AnimationController@display')
 ->where('animation', '(everywhere-usa|forest-moon|squares-and-triangles)');
 

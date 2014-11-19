@@ -264,3 +264,15 @@ a:hover {
 .gc-sprite-github {
   background-position: 75px 0px;
 }
+.gc-top-content {
+  margin-top: 20px;
+}
+
+.gc-link {
+  color: #6a9859;
+  cursor: pointer;
+}
+
+.gc-link:hover {
+  color: #6b4776;
+}
