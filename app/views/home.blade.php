@@ -277,7 +277,3 @@
 </div>
 
 @stop
-
-@section('scripts')
-  <script> gc.logo('logoContent'); </script>
-@stop

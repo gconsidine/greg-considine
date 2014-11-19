@@ -109,8 +109,6 @@
       <script src="/gc/js/gc.min.js?modified={{filemtime('gc/js/gc.min.js')}}"></script>
     @endif
 
-    <script> gc.logo('logoHeader'); </script>
-
     @yield('scripts')
     
   </body>
