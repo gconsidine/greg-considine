@@ -124,6 +124,27 @@
     </div>
     <div class="col-md-8">
 
+      <div class="gc-image-container">
+        <p><a href="https://github.com/gconsidine" target="_blank">GitHub</a></p>
+        <a href="https://github.com/gconsidine" target="_blank">
+          <div class="img-responsive gc-project-sprite gc-sprite-github-content gc-border"></div>
+        </a>
+      </div>
+
+      <div class="gc-image-container">
+        <p><a href="https://coveralls.io/r/gconsidine" target="_blank">Coveralls</a></p>
+        <a href="https://coveralls.io/r/gconsidine" target="_blank">
+          <div class="img-responsive gc-project-sprite gc-sprite-coveralls gc-border"></div>
+        </a>
+      </div>
+
+      <div class="gc-image-container">
+        <p><a href="https://travis-ci.org/gconsidine/plz-cms" target="_blank">Travis CI</a></p>
+        <a href="https://travis-ci.org/gconsidine/plz-cms" target="_blank">
+          <div class="img-responsive gc-project-sprite gc-sprite-travis gc-border"></div>
+        </a>
+      </div>
+
     </div>
   </div>
 </div>
@@ -276,4 +297,54 @@
   </div>
 </div>
 
+<div class="modal fade" id="openSourceModal" tabindex="-1" role="dialog" 
+     aria-labelledby="openSourceModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="openSourceModalLabel">Open Source</h4>
+      </div>
+      <div class="modal-body">
+
+        <div class="gc-project-entry">
+          <a href="https://github.com/gconsidine" target="_blank">GitHub</a>
+          <p>
+            GitHub has become an indispensable tool, community, and resource for me. Lately, I've 
+            been taking cues from the many great projects I've had the pleasure of using.  While I 
+            don't open source all of my projects (client projects in particular), I do try to keep 
+            everything else open on the MIT license -- even the old projects that make me cringe a 
+            bit when I revisit them.
+          </p>
+        </div>
+
+        <div class="gc-project-entry">
+          <a href="https://coveralls.io/r/gconsidine" target="_blank">Coveralls</a>
+          <p>
+            Testing has moved to the forefront of my thought process while writing code nowadays.  
+            Now that I've invested the time to integrate automated testing into my workflow, it's 
+            hard to imagine living without it.  It provides a level of confidence, security, and 
+            assurance that just isn't attainable otherwise.
+          </p>
+          <p>
+            Coveralls is a great open source tool to provide coverage statistics on your open 
+            source projects and has excellent integration with GitHub.
+          </p>
+        </div>
+
+        <div class="gc-project-entry">
+          <a href="https://travis-ci.org/gconsidine/plz-cms" target="_blank">Travis CI</a>
+          <p>
+            Over time, I've worked to refine and automate my workflow.  Using Travis CI on open 
+            source projects has been a big help in automating full builds and relaying the status 
+            back to GitHub.  Travis CI becomes more useful as you introduce more automation 
+            into your workflow: server-side dependencies fetched via npm, client-side dependencies 
+            fetched via Bower, linting, concatenation, minification, testing, etc. 
+          </p> 
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
 @stop

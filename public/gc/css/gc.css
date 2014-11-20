@@ -237,6 +237,15 @@ a:hover {
 .gc-sprite-squares {
   background-position: 0px -375px;
 }
+.gc-sprite-github-content {
+  background-position: 0px -450px;
+}
+.gc-sprite-coveralls {
+  background-position: 0px -525px;
+}
+.gc-sprite-travis {
+  background-position: 0px -600px;
+}
 
 .gc-icon-sprite {
   background-image: url("/gc/img/prod/icons.png"); 

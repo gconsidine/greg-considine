@@ -48,6 +48,7 @@
           <ul class="nav navbar-nav gc-nav-buttons">
             <li><a class="gc-scroll" href="#webApps">Web Apps</a></li>
             <li><a class="gc-scroll" href="#canvasAnimations">Animations</a></li>
+            <li><a class="gc-scroll" href="#openSource">Open Source</a></li>
             <li><a class="gc-scroll" href="#contactMe">Contact</a></li>
           </ul>
         </div>
