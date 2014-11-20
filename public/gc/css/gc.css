@@ -84,7 +84,7 @@ a:hover {
 }
 
 .modal-header {
-  border-bottom: 1px dotted #6b4776;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 
 .modal-title {
@@ -133,7 +133,7 @@ a:hover {
 }
 
 .gc-content-divider {
-  border: 1px dotted #40174d;
+  border: 1px solid rgba(0,0,0,0.1);
   margin: 10px 0 10px 0;
 }
 

@@ -115,11 +115,11 @@
 <div id="openSource" class="container">
   <div class="gc-content">
     <div class="col-md-4 gc-icon-title">
-      <span class="glyphicon glyphicon-heart-empty gc-content-icon"></span>
+      <span class="glyphicon glyphicon-eye-open gc-content-icon"></span>
       <h1>Open Source</h1>
       <div class="gc-link" data-toggle="modal" data-target="#openSourceModal">
         <span class="glyphicon glyphicon-info-sign gc-content-details"></span>
-        <p >(click for info)</p>
+        <p>(click for info)</p>
       </div>
     </div>
     <div class="col-md-8">
