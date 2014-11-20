@@ -5,29 +5,33 @@
 @section('content')
 
 <div class="container">
-  <div class="gc-content">
+  <div class="gc-content gc-top-content">
     <div class="col-md-4">
       <div id="logoContent" class="gc-logo-content" style="height: 300px;"></div>
     </div>
+
     <div class="col-md-8 gc-welcome-container">
       <h1>Thanks for Visiting</h1>
 
       <div class="gc-content-divider"></div>
       <p>
-        Originally, I started doing web development out of curiosity (having only worked with C, 
-        C++, and Java in an academic setting), beginning first with static HTML/CSS-only sites, 
-        then moving to data-driven PHP + MySQL web applications (full of spaghetti code). Having 
-        to maintain the aforementioned "spaghetti" turned me on to best practices, MVC, and the 
-        Laravel Framework. Somewhere along the way I picked up JavaScript and transitioned away 
-        from writing procedural JavaScript to writing object-oriented JavaScript, and more 
-        recently CommonJS modules + Browserify.
+        I'm currently interested (obsessed, really) with full-stack development.  At work, I
+        primarily use a technology stack (or some portion of it) that I sometimes refer to 
+        (while planting my tongue firmly in my cheek) as the NAPALM stack: 
+        Node.js-AngularJS-PHP-Apache-Linux-MySQL.  Outside of the office, I'm becoming more 
+        invested in the MongoDB, Express, AngularJS, and Node.js world.
       </p>
 
       <p>
-        Web development is my primary hobby, and I'm always looking to learn new technologies and 
-        hone my skills.  If you'd like to get in touch with me, use the <a class="gc-scroll" 
-        href="#contactMe">contact form</a> below and I'll get back to you as soon as possible.  
-        Thank you!
+        When I'm not immersed in something technical, I find myself becoming more interested in the 
+        wisdom handed down from the elders of the industry, and the history of the industry itself.
+      </p>
+
+      <p>
+        Software is my profession and primary hobby and I'm always looking to learn new 
+        technologies and to hone my skills.  If you'd like to get in touch with me, use the 
+        <a class="gc-scroll" href="#contactMe">contact form</a> below and I'll get back to you as 
+        soon as possible.  Thank you!
       </p>
 
     </div>
@@ -39,8 +43,10 @@
     <div class="col-md-4 gc-icon-title">
       <span class="glyphicon glyphicon-globe gc-content-icon"></span>
       <h1>Web Apps</h1>
-      <span class="glyphicon glyphicon-info-sign gc-content-details" data-toggle="modal" 
-            data-target="#webAppsModal"></span>
+      <div class="gc-link" data-toggle="modal" data-target="#webAppsModal">
+        <span class="glyphicon glyphicon-info-sign gc-content-details"></span>
+        <p >(click for info)</p>
+      </div>
     </div>
     <div class="col-md-8">
 
@@ -74,8 +80,10 @@
     <div class="col-md-4 gc-icon-title">
       <span class="glyphicon glyphicon-picture gc-content-icon"></span>
       <h1>Canvas Animations</h1>
-      <span class="glyphicon glyphicon-info-sign gc-content-details" data-toggle="modal" 
-            data-target="#canvasModal"></span>
+      <div class="gc-link" data-toggle="modal" data-target="#canvasModal">
+        <span class="glyphicon glyphicon-info-sign gc-content-details"></span>
+        <p >(click for info)</p>
+      </div>
     </div>
     <div class="col-md-8">
 
@@ -103,6 +111,44 @@
     </div>
   </div>
 </div>
+
+<div id="openSource" class="container">
+  <div class="gc-content">
+    <div class="col-md-4 gc-icon-title">
+      <span class="glyphicon glyphicon-heart-empty gc-content-icon"></span>
+      <h1>Open Source</h1>
+      <div class="gc-link" data-toggle="modal" data-target="#openSourceModal">
+        <span class="glyphicon glyphicon-info-sign gc-content-details"></span>
+        <p >(click for info)</p>
+      </div>
+    </div>
+    <div class="col-md-8">
+
+      <div class="gc-image-container">
+        <p><a href="https://github.com/gconsidine" target="_blank">GitHub</a></p>
+        <a href="https://github.com/gconsidine" target="_blank">
+          <div class="img-responsive gc-project-sprite gc-sprite-github-content gc-border"></div>
+        </a>
+      </div>
+
+      <div class="gc-image-container">
+        <p><a href="https://coveralls.io/r/gconsidine" target="_blank">Coveralls</a></p>
+        <a href="https://coveralls.io/r/gconsidine" target="_blank">
+          <div class="img-responsive gc-project-sprite gc-sprite-coveralls gc-border"></div>
+        </a>
+      </div>
+
+      <div class="gc-image-container">
+        <p><a href="https://travis-ci.org/gconsidine/plz-cms" target="_blank">Travis CI</a></p>
+        <a href="https://travis-ci.org/gconsidine/plz-cms" target="_blank">
+          <div class="img-responsive gc-project-sprite gc-sprite-travis gc-border"></div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
 
 <div id="contactMe" class="container">
   <div class="gc-content">
@@ -251,8 +297,54 @@
   </div>
 </div>
 
-@stop
+<div class="modal fade" id="openSourceModal" tabindex="-1" role="dialog" 
+     aria-labelledby="openSourceModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="openSourceModalLabel">Open Source</h4>
+      </div>
+      <div class="modal-body">
 
-@section('scripts')
-  <script> gc.logo('logoContent'); </script>
+        <div class="gc-project-entry">
+          <a href="https://github.com/gconsidine" target="_blank">GitHub</a>
+          <p>
+            GitHub has become an indispensable tool, community, and resource for me. Lately, I've 
+            been taking cues from the many great projects I've had the pleasure of using.  While I 
+            don't open source all of my projects (client projects in particular), I do try to keep 
+            everything else open on the MIT license -- even the old projects that make me cringe a 
+            bit when I revisit them.
+          </p>
+        </div>
+
+        <div class="gc-project-entry">
+          <a href="https://coveralls.io/r/gconsidine" target="_blank">Coveralls</a>
+          <p>
+            Testing has moved to the forefront of my thought process while writing code nowadays.  
+            Now that I've invested the time to integrate automated testing into my workflow, it's 
+            hard to imagine living without it.  It provides a level of confidence, security, and 
+            assurance that just isn't attainable otherwise.
+          </p>
+          <p>
+            Coveralls is a great open source tool to provide coverage statistics on your open 
+            source projects and has excellent integration with GitHub.
+          </p>
+        </div>
+
+        <div class="gc-project-entry">
+          <a href="https://travis-ci.org/gconsidine/plz-cms" target="_blank">Travis CI</a>
+          <p>
+            Over time, I've worked to refine and automate my workflow.  Using Travis CI on open 
+            source projects has been a big help in automating full builds and relaying the status 
+            back to GitHub.  Travis CI becomes more useful as you introduce more automation 
+            into your workflow: server-side dependencies fetched via npm, client-side dependencies 
+            fetched via Bower, linting, concatenation, minification, testing, etc. 
+          </p> 
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
 @stop

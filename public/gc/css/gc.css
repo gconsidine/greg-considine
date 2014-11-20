@@ -237,6 +237,15 @@ a:hover {
 .gc-sprite-squares {
   background-position: 0px -375px;
 }
+.gc-sprite-github-content {
+  background-position: 0px -450px;
+}
+.gc-sprite-coveralls {
+  background-position: 0px -525px;
+}
+.gc-sprite-travis {
+  background-position: 0px -600px;
+}
 
 .gc-icon-sprite {
   background-image: url("/gc/img/prod/icons.png"); 
@@ -263,4 +272,16 @@ a:hover {
 }
 .gc-sprite-github {
   background-position: 75px 0px;
+}
+.gc-top-content {
+  margin-top: 20px;
+}
+
+.gc-link {
+  color: #6a9859;
+  cursor: pointer;
+}
+
+.gc-link:hover {
+  color: #6b4776;
 }
