@@ -92,25 +92,22 @@
           id,
           width = 0,
           height = 0;
+
       
-      var initialize = (function () {
+      id = containerId;
+      container = document.getElementById(id);
+      height = window.getComputedStyle(container).height;
+      width = height.substring(0, height.length - 2);
+      height = width;
 
-        id = containerId;
-        container = document.getElementById(id);
-        height = window.getComputedStyle(container).height;
-        width = height.substring(0, height.length - 2);
-        height = width;
+      canvas = document.createElement('canvas');
+      canvas.width = width;
+      canvas.height = height;
 
-        canvas = document.createElement('canvas');
-        canvas.width = width;
-        canvas.height = height;
+      context = canvas.getContext('2d');
+      container.appendChild(canvas);
 
-        context = canvas.getContext('2d');
-        container.appendChild(canvas);
-
-        draw();
-
-      }());
+      draw();
 
       function draw () {
 
@@ -142,7 +139,7 @@
 
       }
 
-    };
+    }
 
     /* jQuery event handlers */
     $('.gc-scroll').click( function (event) {		
@@ -157,7 +154,23 @@
 
   }());
 
-  gc.logo('logoHeader');
-  gc.logo('logoContent');
+
+  if(document.getElementById('contactButton')) {
+    document.getElementById('contactButton').onclick = function () { 
+      gc.request({
+        text: document.getElementById('userMessage').value,
+        email: document.getElementById('userEmail').value,
+        token: document.getElementsByName('_token')[0].value
+      });
+    };
+  }
+
+  if(document.URL.indexOf('animation') !== -1) {
+    console.log(document.getElementById('logoLinkBack'));
+    gc.logo('logoLinkBack');
+  } else {
+    gc.logo('logoHeader');
+    gc.logo('logoContent');
+  }
 
 }());

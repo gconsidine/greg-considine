@@ -172,11 +172,7 @@
 
       {{ Form::token() }}
 
-      <button onclick="gc.request({ 
-                         text : document.getElementById('userMessage').value,
-                         email : document.getElementById('userEmail').value,
-                         token : document.getElementsByName('_token')[0].value
-                       });" id="contactButton" class="btn btn-default pull-right">Send</button>
+      <button id="contactButton" class="btn btn-default pull-right">Send</button>
 
       <div id="contactSuccess" class="pull-right gc-text-success" style="display:none">Thank You!</div>
       <img width=32 height=32 id="contactSending" class="pull-right" style="display:none" src="/gc/img/prod/loading.gif" />
