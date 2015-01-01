@@ -15,10 +15,11 @@
 
       <div class="gc-content-divider"></div>
       <p>
-        I'm currently most interested in full-stack development.  At work, I primarily use a 
-        technology stack that I sometimes refer to (while planting my tongue firmly in my cheek) as
-        the NAPALM stack: Node.js, AngularJS, PHP, Apache, Linux, and MySQL.  Outside of the office, 
-        I'm becoming more invested in the MongoDB, Express, AngularJS, and Node.js world.
+        I'm a software engineer currently focused on full-stack engineering and modern best
+        practices.  In addition to development in LAMP-based environments at work and 
+        mostly MEAN-based environments at home, I enjoy being involved in the automation of 
+        processes (testing, building, deploying, etc.), and in monitoring of the health and usage 
+        of projects in production. 
       </p>
 
       <p>
