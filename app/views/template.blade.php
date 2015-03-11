@@ -95,7 +95,7 @@
         <div class="gc-content-divider"></div>
         <p>
           Greg Considine <br />
-          <a href="/gc/files/greg-considine-public.pdf" target="_blank">R&eacute;sum&eacute;</a><br />
+          <a href="/gc/files/greg-considine.pdf" target="_blank">R&eacute;sum&eacute;</a><br />
           Copyright &copy; 2013-{{ Date('Y') }} <a href="/">greg-considine.com</a>
         </p>
       </div>
